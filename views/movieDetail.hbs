@@ -1,0 +1,11 @@
+<form action="movies/:movieId", method="GET"></form>
+
+{{#each movieFromDB}}
+<p>{{this.name}}</p>
+<img src="{{this.image}}">
+<p>{{this.description}}</p>
+
+
+{{this.stars}}
+{{this.showtimes}}
+{{/each}}
